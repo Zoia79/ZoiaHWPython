@@ -1,4 +1,5 @@
 from mailbox import FormatError
+
 import pytest
 from StringUtils import StringUtils
 
@@ -26,7 +27,7 @@ def test_trim_no_spase():
     'string, delimeter, result',
     [
         ("Домашка,Тренировка,Работа", ",", ["Домашка","Тренировка","Работа"]),
-        ("643,-374,48.45", ",", ["643","-374","48.45"]),
+        ("643,-374,48.425", ",", ["643","-374","48.425"]),
         ("97l,83n,75d", ",", ["97l","83n","75d"]),
     ],
 )
